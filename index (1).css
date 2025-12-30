@@ -1,0 +1,813 @@
+* {
+
+  box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.Top {
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;  
+    width: 100%;
+justify-content: center;
+align-items: center;
+      margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+}
+
+
+.Tpo0 {
+    display: flex;
+    justify-content: space-evenly; /* рівні відступи зліва і справа */
+    gap: 10px;
+    list-style-type: none;
+    width: 100%;
+    
+
+}
+
+
+
+
+
+
+
+
+
+.Tpo0 li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Rol {
+    color: black;
+    text-decoration: none;
+    
+}
+
+.Vas {
+    max-width: 100px;
+    
+}
+
+.Text h1 {
+    text-align: center;
+       font-size: 34px;
+}
+
+.Text h2 {
+    text-align: center;
+     font-size: 30px;
+}
+
+.Text p {
+    font-size: 20px;
+}
+
+.Text h3 {
+    font-size: 26px;
+}
+
+.HH2 {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+.Text {
+    padding: 0px 170px 0px 170px;
+    
+}
+
+.fotos {
+       width: 100%;
+    height: 500px;
+    display: block;
+}
+
+.Foto {
+    max-width: 200px;
+    margin-left: 30px;
+    margin-top: -5px;
+}
+
+.p1 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.p2 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.Text-p1 {
+    display: block;
+}
+
+.ZK li {
+    
+    display: block;
+    text-align: center;
+}
+
+.Gol {
+    max-width: 500px;
+}
+
+.TextP  {
+    font-size: 24px;
+   
+}
+
+.Fotos {
+    display: flex;
+    max-width: 1000px;
+    height: 645px;
+    margin: 0 auto;
+}
+
+.Foto1 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.Co {
+    max-width: 550px;
+}
+
+.IV {
+    max-width: 500px;
+}
+
+.custom-select {
+    width: 170px;
+    left: 60px;
+    height: 40px;
+    top: 40px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid white;
+    background-color: #dedede;
+}
+.selected-option, .option {
+    padding: 10px;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+}
+
+.options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+      border-top: 1px solid #ccc;
+    background-color: #dedede;
+}
+
+.option {
+  background-color: #dedede;
+  transition: 0.2s;
+}
+
+.option:hover {
+  background-color: #5a5a5a;
+  color: white;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.custom-select img {
+    width: 25px;
+    height: 15px;
+}
+
+
+
+#For1 {
+    position: fixed;
+    top: 650px;
+    right: 60px;
+    font-size: 52px;
+    text-decoration: none;
+    color: black;
+}
+
+#For2 {
+    position: fixed;
+    top: 665px;
+    right: 60px;
+    font-size: 52px;
+    text-decoration: none;
+    color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+.hero {
+  background-image: url("image 5.png"); /* твоє фото */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;       /* ставимо елементи один під одним */
+  justify-content: space-between; /* верхній вгорі, нижній знизу */
+  align-items: center;          /* по центру горизонтально */
+
+}
+
+.hero h1 {
+  color: white;
+  font-size: 48px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  margin: 50px;
+}
+
+
+#zakarpattia {
+    display: block;
+}
+
+
+footer {
+
+          /* якщо не потрібно, можна залишити */
+  width: 100%;       /* на всю ширину вікна */
+}
+
+footer .All {
+    background-color: rgb(64, 64, 78);
+    padding: 40px 100px 100px 100px;
+    box-sizing: border-box;
+    color: white;
+}
+
+footer .TextP {
+   margin: 0 auto;
+    max-width: 800px;
+}
+
+
+
+@media (max-width: 321px ) {
+ .hero {
+      width: 100%;
+ }
+
+
+
+.Tpo0 {
+    flex-wrap: wrap;             /* герби стають у кілька рядків */
+    justify-content: center;     /* по центру */
+    gap: 6px;
+  }
+
+  .Vas {
+    max-width: 30px;             /* трохи менші для телефону */
+  }
+ .Foto {
+    max-width: 90px;
+    margin-left: 15px;
+    margin-top: -2px;
+    margin-bottom: 10px;
+
+} 
+
+
+ .Fotos {
+    max-width: 230px;
+    height: 150px;
+ }
+
+.Gol {
+  display: block;
+  max-width: 120px;
+  margin-bottom: 10px;
+}
+
+.p2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.p2 img {
+   max-width: 90%;
+    height: auto;
+}
+
+.p1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.p1 img {
+   max-width: 90%;
+    height: auto;
+}
+.Foto1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.Foto1 img {
+    max-width: 90%;
+    height: auto;
+}
+
+
+.Rol {
+    font-size: 10px;
+}
+
+
+.Text {
+    padding: 0px 10px 0px 10px;
+    
+}
+
+.TextP  {
+    font-size: 16px;
+   
+}
+.Text h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.Text h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.TextP h3 {
+  margin-left: 4px;
+  font-size: 18px;
+}
+
+}
+
+@media (min-width: 322px) and (max-width: 426px) {
+ .hero {
+      width: 100%;
+ }
+
+
+
+.Tpo0 {
+    flex-wrap: wrap;             /* герби стають у кілька рядків */
+    justify-content: center;     /* по центру */
+    gap: 6px;
+  }
+
+  .Vas {
+    max-width: 30px;             /* трохи менші для телефону */
+  }
+
+
+  .custom-select {
+    width: 120px;
+    left: -2px;
+    height: 30px;
+    top: 2px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid white;
+    background-color: #dedede;
+}
+.selected-option, .option {
+    padding: 6px;
+    align-items: center;
+    gap: 4px;
+    display: flex;
+}
+
+ .Foto {
+    max-width: 90px;
+    margin-left: 15px;
+    margin-top: -2px;
+
+} 
+
+
+.Fotos {
+    max-width: 200px;
+    height: 150px;
+ }
+
+.Gol {
+  display: block;
+  max-width: 120px;
+  margin-bottom: 10px;
+}
+
+.p2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.p2 img {
+   max-width: 90%;
+    height: auto;
+}
+
+.p1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.p1 img {
+   max-width: 90%;
+    height: auto;
+}
+
+.Foto1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.Foto1 img {
+    max-width: 90%;
+    height: auto;
+}
+
+
+.Rol {
+    font-size: 10px;
+}
+
+
+.Text {
+    padding: 0px 25px 0px 25px;
+    
+}
+
+.TextP  {
+    font-size: 16px;
+   
+}
+.Text h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.Text h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.TextP h3 {
+  margin-left: 4px;
+  font-size: 18px;
+}
+
+}
+
+
+@media (min-width: 427px) and (max-width: 739px) {
+ .hero {
+      width: 100%;
+ }
+
+
+
+.Tpo0 {
+    flex-wrap: wrap;             /* герби стають у кілька рядків */
+    justify-content: center;     /* по центру */
+    gap: 12px;
+  }
+
+  .Vas {
+    max-width: 50px;              /* трохи менші для телефону */
+    
+  }
+  .ZK a{
+    font-size: 12px;
+  }
+
+  .custom-select {
+    width: 140px;
+    left: -2px;
+    height: 35px;
+    top: 2px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid white;
+    background-color: #dedede;
+}
+.selected-option, .option {
+    padding: 8px;
+    align-items: center;
+    gap: 6px;
+    display: flex;
+}
+ .Foto {
+    max-width: 150px;
+    margin-left: 25px;
+    margin-top: -5px;
+
+} 
+
+
+ .Fotos {
+    max-width: 300px;
+    height: 200px;
+ }
+
+.Gol {
+  display: block;
+  max-width: 120px;
+}
+
+.p2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.p2 img {
+   max-width: 90%;
+    height: auto;
+}
+
+.p1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.p1 img {
+   max-width: 90%;
+    height: auto;
+}
+.Foto1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.Foto1 img {
+    max-width: 90%;
+    height: auto;
+}
+
+
+.Rol {
+    font-size: 20px;
+}
+
+
+.Text {
+    padding: 0px 25px 0px 25px;
+    
+}
+
+.TextP  {
+    font-size: 16px;
+   
+}
+.Text h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.Text h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.TextP h3 {
+  margin-left: 4px;
+  font-size: 18px;
+}
+
+}
+
+
+@media (min-width: 740px) and (max-width: 950px) {
+ .hero {
+      width: 100%;
+ }
+
+.Text {
+    padding: 0px 90px 0px 90px;
+    
+}
+
+
+.Tpo0 {
+    flex-wrap: wrap;             /* герби стають у кілька рядків */
+    justify-content: center;     /* по центру */
+    gap: 12px;
+  }
+
+  .Vas {
+   max-width: 50px;              /* трохи менші для телефону */
+    
+  }
+
+  .ZK a{
+    font-size: 12px;
+  }
+
+    .custom-select {
+    width: 160px;
+    left: -2px;
+    height: 40px;
+    top: 20px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid white;
+    background-color: #dedede;
+}
+.selected-option, .option {
+    padding: 10px;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+}
+ .Foto {
+    max-width: 150px;
+    margin-left: 10px;
+    margin-top: -5px;
+
+} 
+
+
+.Fotos {
+    display: flex;
+    max-width: 700px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+
+
+.p2 {
+    display: flex;
+    flex-direction: column;  
+    gap: 10px;
+    margin: 0 auto;
+    align-items: center;
+
+}
+.p2 img {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+/* .Text-p1 img {
+
+} */
+
+.p1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.p1 img {
+   max-width: 90%;
+    height: auto;
+}
+
+
+.Foto1{
+
+margin: 0 auto;
+}
+
+.Foto1 img {
+max-width: 350px;
+}
+
+
+.Rol {
+    font-size: 20px;
+}
+
+.TextP {
+    font-size: 18px;
+}
+
+
+
+
+
+
+}
+
+@media (min-width: 951px) and (max-width: 1320px) {
+  .custom-select {
+    width: 160px;
+    left: 1px;
+    height: 40px;
+    top: 40px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid white;
+    background-color: #dedede;
+}
+.selected-option, .option {
+    padding: 10px;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+}
+
+.Fotos {
+    display: flex;
+    max-width: 800px;
+    height: 380px;
+    margin: 0 auto;
+}
+
+.p1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.p1 img {
+   max-width: 90%;
+   height: auto;
+}
+
+
+.Gol {
+  display: block;
+  max-width: 420px;
+}
+
+
+
+.Foto1 img {
+    max-width: 455px;
+    height: 300px;
+}
+}

@@ -1,0 +1,498 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.fotos img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+
+.UL {
+background-color: #ffffff5d;
+    width: 100%;
+    position: absolute;
+     top: 0px;
+    left: 0px;
+}
+
+.Div {
+
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    box-sizing: border-box; 
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.fop {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+
+
+
+
+.Div :hover {
+     background-color: rgba(255, 255, 255, 0.489);
+}
+
+
+.Gift {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: (1);
+}
+
+.fotoWeb {
+    display: flex;
+    margin: 0 auto;
+    width: 980px;
+    height: 450px;
+}
+
+.fotoWebs {
+    margin: 0 auto;
+    width: 620px;
+    height: 400px;
+}
+
+.left {
+    grid-column: 1/2;
+    border-right: 1px solid black;
+    background: linear-gradient(90deg, #ffffff 0%, #dedede 100%);
+}
+
+.center {
+    grid-column: 2/12;
+    padding: 10px;
+}
+
+.center h1 {
+    text-align: center;
+    font-size: 34px;
+}
+
+.center h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.center p {
+    font-size: 20px;
+}
+
+
+.center h3 {
+    font-size: 26px;
+}
+
+
+.right {
+    grid-column: 12/13;
+    border-left: 1px solid black;
+      background: linear-gradient(90deg, #dedede 0%, #ffffff 101%);
+}
+
+.custom-select {
+    width: 170px;
+    left: -10px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+      border: 1px solid white;
+    background-color: #dedede;
+}
+
+.selected-option, .option {
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border-top: 1px solid #ccc;
+    background-color: #dedede;
+}
+
+.options :hover {
+     background-color: aliceblue;
+}
+
+.custom-select img {
+    width: 25px;
+    height: 15px;
+}
+
+.hidden {
+display: none;
+}
+
+.toggle {
+    all: unset;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.places {
+font-size: 20px;
+
+}
+
+
+
+  .content{
+    border: 1px solid rgba(198, 193, 183, 0.567);
+    border-radius: 10px;
+    padding: 8px;
+    background-color:#fafafa;
+}
+
+
+
+.fos {
+    position: fixed;
+    top: 600px;
+    right: 50px;
+}
+
+.foss {
+    position: fixed;
+    top: 610px;
+    right: 50px;
+}
+
+.fold1, .fold2{
+    text-decoration: none;
+    color: black;
+    font-size: 42px;
+}
+
+
+
+
+footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.foot {
+     background-color: rgb(64, 64, 78);
+     padding: 40px 100px 100px 100px;
+     color: white;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+footer h3 {
+    font-size: 30px;
+}
+
+.People  li {
+    margin-bottom: 10px;
+     font-size: 20px;
+}
+
+
+.burger {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    user-select: none;
+}
+
+@media (max-width: 1024px) {
+    .burger {
+    display: block;
+    
+}
+
+.Div {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 270px;
+    top: 30px;
+    left: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.255);
+    border: 1px solid black;
+}
+
+.Div.active {
+    display: flex;
+}
+}
+
+@media (max-width: 1224px) {
+    .fop {
+    font-size: 18px;   
+}
+
+.custom-select {
+    width: 130px;
+    left: -10px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid white;
+    background-color: #dedede;
+}
+.selected-option, .option {
+    padding: 8px;
+    align-items: center;
+    gap: 6px;
+    display: flex;
+}
+}
+
+
+@media (min-width: 1430px) and (max-width: 1499px) {
+    .fotoWeb {
+  width: 965px;
+    height: 435px;
+}
+
+    .fotoWebs {
+  width: 540px;
+    height: 440px;
+}
+}
+
+@media (min-width: 1399px) and (max-width: 1430px) {
+    .fotoWeb {
+  width: 965px;
+    height: 435px;
+}
+
+    .fotoWebs {
+  width: 515px;
+    height: 435px;
+}
+}
+
+@media (min-width: 1301px) and (max-width: 1399px) {
+    .fotoWeb {
+  width: 965px;
+    height: 435px;
+}
+
+    .fotoWebs {
+  width: 500px;
+    height: 425px;
+}
+}
+
+@media (min-width: 1231px) and (max-width: 1300px) {
+    .fotoWeb {
+  width: 965px;
+    height: 435px;
+}
+
+    .fotoWebs {
+  width: 485px;
+    height: 425px;
+}
+}
+
+@media (min-width: 1006px) and (max-width: 1140px) {
+    .fotoWeb {
+  width: 825px;
+    height: 410px;
+}
+
+    .fotoWebs {
+  width: 835px;
+    height: 410px;
+}
+}
+
+@media (min-width: 1141px) and (max-width: 1230px) {
+    .fotoWeb {
+  width: 865px;
+    height: 425px;
+}
+
+    .fotoWebs {
+    display: flex;
+    margin: 0 auto;
+    width: 855px;
+    height: 420px;
+    margin-bottom: 8px;
+}
+
+    .hidden {
+display: none;
+}
+}
+
+
+@media (min-width: 896px) and (max-width: 1005px) {
+
+
+    .fotoWeb {
+  width: 690px;
+    height: 370px;
+}
+
+    .fotoWebs {
+        display: flex;
+        margin: 0 auto;
+  width: 745px;
+    height: 370px;
+    margin-bottom: 8px;
+}
+    .hidden {
+display: none;
+}
+
+}
+
+@media (min-width: 696px) and (max-width: 895px) {
+.fotos img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 480px;
+    display: block;
+}
+
+    .fotoWeb {
+  width: 505px;
+    height: 262px;
+}
+
+    .fotoWebs {
+        display: flex;
+        margin: 0 auto;
+  width: 575px;
+    height: 282px;
+    margin-bottom: 8px;
+}
+    .hidden {
+display: none;
+}
+
+}
+
+
+
+@media (min-width: 466px) and (max-width: 695px) {
+.fotos img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 380px;
+    display: block;
+}
+
+    .fotoWeb {
+  width: 325px;
+    height: 222px;
+}
+
+    .fotoWebs {
+        display: flex;
+        margin: 0 auto;
+  width: 415px;
+    height: 200px;
+    margin-bottom: 5px;
+}
+
+    .hidden {
+display: none;
+}
+}
+
+
+
+@media (min-width: 366px) and (max-width: 465px){
+.fotos img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+    .fotoWeb {
+  width: 250px;
+    height: 160px;
+}
+
+
+    .fotoWebs {
+    display: flex;
+    margin: 0 auto;
+    width: 300px;
+    height: 180px;
+    margin-bottom: 5px;
+}
+    .hidden {
+display: none;
+}
+
+.foot {
+    background-color: rgb(64, 64, 78);
+    padding: 30px 50px 50px 50px;
+    box-sizing: border-box;
+    color: white;
+}
+}
+
+
+@media (min-width: 320px) and (max-width: 365px){
+.fotos img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+
+    .fotoWeb {
+    width: 180px;
+    height: 120px;
+}
+
+    .fotoWebs {
+    display: flex;
+    margin: 0 auto;
+    width: 250px;
+    height: 127px;
+    margin-bottom: 5px;
+}
+
+    .hidden {
+display: none;
+}
+.foot {
+    background-color: rgb(64, 64, 78);
+    padding: 30px 40px 40px 40px;
+    box-sizing: border-box;
+    color: white;
+}
+
+}
